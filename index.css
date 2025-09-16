@@ -1,0 +1,193 @@
+.container,
+.header {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.content {
+    width: 100%;
+
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    flex-shrink: 0;
+    flex-direction: column;
+    line-height: normal;
+    letter-spacing: normal;
+    min-height: 100vh; /* Ensure container fills viewport height */
+}
+.header {
+    align-self: stretch;
+    gap: 10px;
+    text-align: left;
+    font-size: 40px;
+    color: var(--color-steelblue);
+    font-family: var(--font-inria-sans);
+}
+.clearblocks-logo-1-icon {
+    width: 100px;
+    position: relative;
+    max-height: 100%;
+    object-fit: cover;
+}
+.clearblocks-development {
+    margin: 0;
+    position: relative;
+    font-size: inherit;
+    font-weight: 400;
+    font-family: inherit;
+}
+.hero,
+.textcontainer {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-sizing: border-box;
+}
+.hero {
+    align-self: stretch;
+    height: 314px;
+    flex-shrink: 0;
+    padding: 10px;
+    background-image: url(./public/cubes-chatgpt.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    text-align: left;
+    font-size: 24px;
+    color: var(--color-black);
+    font-family: var(--font-inria-sans);
+}
+.textcontainer {
+    width: 511px;
+    border-radius: 5px;
+    background-color: var(--color-gray);
+    padding: var(--padding-26) var(--padding-20) var(--padding-26) 22px;
+    gap: 13px;
+}
+.freelance-software-development {
+    margin: 0;
+    position: relative;
+    font-size: inherit;
+    font-weight: 400;
+    font-family: inherit;
+}
+.building-with-transparency {
+    position: relative;
+    font-size: var(--font-size-16);
+}
+
+a {
+    color: black;
+}
+
+.aboutme,
+.contact-info {
+    display: flex;
+    align-items: flex-start;
+    max-width: 100%;
+}
+.aboutme {
+    align-self: stretch;
+    height: 352px;
+    background-color: var(--color-aliceblue);
+    overflow: hidden;
+    flex-direction: column;
+    flex: 1 1 auto; /* Grow to fill remaining space when content is short */
+    padding: var(--padding-19) var(--padding-20) var(--padding-19) 29px;
+    box-sizing: border-box;
+    gap: 30px;
+    text-align: left;
+    font-size: var(--font-size-16);
+    color: var(--color-black);
+    font-family: var(--font-inria-sans);
+}
+.contact-info {
+    justify-content: center;
+    gap: 18.5px;
+}
+.profile1-round-1-icon {
+    height: 110px;
+    width: 110px;
+    position: relative;
+    object-fit: cover;
+}
+.contact-details {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--padding-19) 0;
+}
+.theo-van-oostrum-container {
+    position: relative;
+    line-height: 138%;
+    min-width: 165px;
+}
+.theo-van-oostrum {
+    margin: 0;
+}
+.contact-details2 {
+    align-self: stretch;
+    border-left: 1px solid var(--color-steelblue);
+    box-sizing: border-box;
+    overflow: hidden;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--padding-19);
+    max-width: 100%;
+}
+.theoclearblocksnl-linkedinc {
+    align-self: stretch;
+    position: relative;
+    line-height: 138%;
+}
+.linkedincomintheo-van-oostr {
+    margin: 0;
+    text-decoration: underline;
+}
+.i-am-a {
+    align-self: stretch;
+    position: relative;
+}
+.footer {
+    align-self: stretch;
+    height: 50px;
+    background-color: var(--color-steelblue);
+    color: var(--color-aliceblue);
+    font-size: 16px;
+    font-family: var(--font-inria-sans);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media screen and (max-width: 725px) {
+    .container {
+        width: 100%;
+    }
+    .textcontainer {
+        width: 95%;
+    }
+
+    .aboutme {
+        height: auto;
+    }
+    .contact-info {
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width: 450px) {
+    .freelance-software-development {
+        font-size: 19px;
+    }
+    .aboutme {
+        gap: 15px;
+    }
+}

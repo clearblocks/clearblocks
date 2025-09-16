@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    line-height: normal;
+}
+
+:root {
+    /* Color */
+    --color-aliceblue: #e3f2f6;
+    --color-black: #000;
+    --color-gray: rgba(255, 255, 255, 0.57);
+    --color-steelblue: #1a8cb1;
+
+    /* Padding */
+    --padding-19: 19px;
+    --padding-20: 20px;
+    --padding-26: 26px;
+
+    /* Font */
+    --font-inria-sans: Inria Sans;
+
+    /* FontSize */
+    --font-size-16: 16px;
+}
